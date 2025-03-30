@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Название маршрута -->
+        <TextView
+            android:id="@+id/routeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Описание маршрута -->
+        <TextView
+            android:id="@+id/routeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#666666"/>
+
+        <!-- Иконки категорий (кафе, музей, парк) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/iconCafe"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cafe"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iconMuseum"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_museum"
+                android:visibility="gone"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/iconPark"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_park"
+                android:visibility="gone"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

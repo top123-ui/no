@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">now</string>
+    <string name="city_image_desc">Изображение города</string>
+    <string name="recycler_view_desc">Список городов России</string>
+</resources>
