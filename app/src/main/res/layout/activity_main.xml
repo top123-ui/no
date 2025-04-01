@@ -14,3 +14,4 @@
         android:importantForAccessibility="no"
         android:contentDescription="@string/recycler_view_desc"/>
 </LinearLayout>
+
